@@ -1,0 +1,14 @@
+# Whitelist or blacklist mode for block interaction
+# Set to true for whitelist mode, false for blacklist mode
+whitelist-mode: false
+
+# List of blocks that can be interacted with through walls (in whitelist mode)
+# Default to include chests, containers, and beds (useful for bedwars, etc.)
+whitelist:
+  - CHEST
+  - TRAPPED_CHEST
+  - FURNACE
+  - BLAST_FURNACE
+  - BARREL
+  - HOPPER
+  - BED

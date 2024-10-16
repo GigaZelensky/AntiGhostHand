@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example.antighosthand'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.21-R0.1-SNAPSHOT'  // Spigot 1.21 API
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17 // Purpur 1.21 requires Java 17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
